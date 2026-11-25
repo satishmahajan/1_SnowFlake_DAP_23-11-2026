@@ -1,0 +1,13 @@
+SnowFlake -  Stage
+
+	- A Stage in Snowflake is a storage location used to hold files before loading them into tables or after unloading data from tables.
+
+	- Types of stage 
+
+		User Stage	@~	Personal user stage
+		Table Stage	@%table_name	Associated with a table
+		Internal Named Stage	@RAW.CSV_STAGE	Stored in Snowflake
+		External Stage	S3, Azure Blob, GCS	Outside Snowflake
+
+
+		

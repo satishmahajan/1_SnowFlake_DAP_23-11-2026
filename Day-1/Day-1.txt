@@ -1,0 +1,132 @@
+SnowFlake
+
+
+		- A fully managed, cloud-native Software-as-a-Service (SaaS) data platform built to power the modern data-driven enterprise. 
+
+		- It is not simply a database or a data warehouse, it is an integrated platform that provides 
+
+			- Data warehousing, 
+				- Is a centralized repository that stores data from multiple sources for reporting, analytics, dashboards, and business intelligence.
+				
+				- Adaptive
+				
+					Automatically optimizes compute resources based on workload patterns. Simplifies warehouse management and improves 						cost/performance.
+
+				- Standard (Gen 1)
+				
+					Traditional Snowflake virtual warehouse architecture. Suitable for general workloads but older generation.
+		
+				- Standard (Gen 2)
+
+					Newer generation standard warehouse with improved performance, scalability, and efficiency compared to Gen 1.
+
+				- Snowpark-optimized 
+
+					Designed for Snowpark Python, Data Science, ML, AI, and large memory-intensive workloads. Provides more memory per node.
+
+				- Interactive
+				
+					Optimized for interactive analytics, dashboards, ad-hoc queries, and BI tools where users expect fast response times.
+				
+			- Data lake capabilities, 
+
+				- Can store
+					Structured (tables, CSV files), 
+					Semi-structured (JSON, XML, Parquet) 
+					Unstructured data (images, videos, PDFs, audio)
+			
+			- Data engineering
+	
+				- Practice of building data pipelines, transforming data, and preparing data for analytics and AI using Snowflake's cloud data 						   platform.
+		
+			- Data science
+
+				- Snowpark	
+					Python, Java, Scala programming in Snowflake
+				- Cortex AI	
+					Built-in LLM and Generative AI functions
+				- Snowflake ML	
+					Train and manage ML models
+				- Notebooks	
+					Interactive data science environment
+				- Feature Store	
+					Manage reusable ML features
+				- Vector Functions	
+					Support semantic search and RAG
+
+	-Accounts 
+
+			- Standard Edition				
+				Basic data warehousing and analytics
+
+			- Enterprise Edition		
+				Advanced security, multi-cluster warehouses
+
+			- Business Critical Edition	
+				Enhanced security, compliance (HIPAA, PCI DSS)
+
+			- Virtual Private Snowflake (VPS)	
+				Dedicated Snowflake environment for large enterprises
+
+	
+
+		-  Objects
+				
+			- Database	Logical container
+	
+			- Schema	Organizes objects
+
+			- Table		Stores data
+		
+			- Stage		Loads files
+			
+			- Warehouse	Compute engine
+		
+			- View		Virtual table
+			
+			- Stream		Change tracking
+				
+			- Task		Scheduled jobs
+		
+			- Semantic View	Business-friendly data model
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+A warehouse is charged in credits per second while it is running, with a 60-second minimum charge each time it starts.
+
+Warehouse Size	Credits/Hour
+X-Small			1
+Small			2
+Medium			4
+Large			8
+X-Large			16
+2X-Large		32
+3X-Large		64
+4X-Large		128
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Example 1
+
+If an X-Small warehouse runs for 30 minutes:
+
+1 credit/hour × 0.5 hour
+Cost = 0.5 credit
+Example 2
+
+If a Medium warehouse runs for 15 minutes:
+
+4 credits/hour × 0.25 hour
+Cost = 1 credit
+Multi-cluster warehouses
+
+If auto-scaling creates multiple clusters, charges increase proportionally.
+
+Example:
+
+Small warehouse = 2 credits/hour
+3 clusters running simultaneously
+Charge = 6 credits/hour
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,16 @@
+S3 Bucket name := 
+S3 bucket ARN  :- 
+
+
+Policies Action :- 
+
+	List  -> ListBucket , ListAllMyBuckets ,ListBucketVersions	
+
+	read - > GetBucketLocation , GetBucketPolicy, GetBucketVersioning
+
+	write -> CreateBucket , DeleteBucket, DeleteObject , DeleteObjectVersion , PutObject
+
+
+policy :- 
+
+role :- 
