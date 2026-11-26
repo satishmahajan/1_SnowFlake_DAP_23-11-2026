@@ -1,0 +1,12 @@
+AI_COMPLETE()
+
+'Summarize the following customer feedback in 3 points: Delivery was delayed but packaging was excellent.'
+
+'Write a professional response to a customer complaining about late delivery.'
+
+'Generate a product description for a wireless noise-cancelling headphone.'
+
+
+AI_SENTIMENT()
+
+	'The delivery was very fast and the product quality exceeded expectations.'
